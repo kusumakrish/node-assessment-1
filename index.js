@@ -3,6 +3,7 @@ const app=express();
 const defaultExport = require("./route/defaultexport");
 const {namedEx} = require("./route/namedexport");
 const {dataApi} = require("./route/CORS");
+const cors = require("cors");
 
 const middleware1 = (req,res,next) => {
     res.send("middleware1");
